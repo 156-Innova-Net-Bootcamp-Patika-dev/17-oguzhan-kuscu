@@ -11,7 +11,6 @@ C:\Users\okuscu\source\repos\TodoApi\TodoApi\bin\Debug\net5.0\Microsoft.OpenApi.
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\okuscu\source\repos\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.csprojAssemblyReference.cache
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.AssemblyInfoInputs.cache
 C:\Users\okuscu\source\repos\TodoApi\TodoApi\obj\Debug\net5.0\TodoApi.AssemblyInfo.cs

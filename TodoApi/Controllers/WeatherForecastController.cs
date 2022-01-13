@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace TodoApi.Controllers
 {
-	[ApiController]
+	
 	[Route("[controller]")]
+	[ApiController]
 	public class WeatherForecastController : ControllerBase
 	{
 		private static readonly string[] Summaries = new[]
@@ -35,13 +36,7 @@ namespace TodoApi.Controllers
 			})
 			.ToArray();
 		}
-		[HttpPost] 
-		public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
-		{
-			_context.TodoItems.Add(todoItem);
-			await _context.SaveChangesAsync();
-
-			return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
-		}
+		
+		
 	}
 }
