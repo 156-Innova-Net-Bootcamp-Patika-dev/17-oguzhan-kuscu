@@ -21,14 +21,15 @@ namespace TodoApi.Controllers
 		public static List<Items> items = new List<Items>()
 																						{
 
-				new Items { Tckn = 1, Name = "Onur", Surname = "Kuşcu",   Age =24       },
-				new Items { Tckn = 2, Name = "Oguzhan", Surname = "Kuşcu"     ,Age =24   },
-				new Items { Tckn = 3, Name = "Çiğdem", Surname = "Kuşcu"  ,Age =24   },
-				new Items { Tckn = 4, Name = "Nuray", Surname = "Kuşcu "   , Age =24 },
-				new Items { Tckn = 5, Name = "Mecit", Surname = "Kuşcu"     ,Age =24  }
+				new Items { Tckn = 1, Name = "Onur", Surname = "Kuşcu",   Age =24     },
+				new Items { Tckn = 2, Name = "Oguzhan", Surname = "Kuşcu"     ,Age =24},
+				new Items { Tckn = 3, Name = "Çiğdem", Surname = "Kuşcu"  ,Age =24    },
+				new Items { Tckn = 4, Name = "Nuray", Surname = "Kuşcu "   , Age =24  },
+				new Items { Tckn = 5, Name = "Mecit", Surname = "Kuşcu"     ,Age =24   }
 																					 };
+	
 
-		//GETALL methodu 
+		//GetAll methodu 
 		[HttpGet]
 		public ActionResult<IEnumerable<Items>> GetAllItems()
 		{
@@ -36,7 +37,7 @@ namespace TodoApi.Controllers
 			return items;
 		}
 
-		//Id ye göre filtrelemek için
+		//Tckn' ye göre filtrelemek için
 		[HttpGet("{id}")]
 		public ActionResult<Items> Get(int id)
 		{
@@ -49,8 +50,9 @@ namespace TodoApi.Controllers
 			return item;
 		}
 
-		//Ekleme işlemi yapılıyor.
+	
 		[HttpPost]
+		//İnsert işlemi yapılıyor.
 		public IActionResult Post([FromBody] Items item)
 		{
 			items.Add(item);
@@ -59,8 +61,9 @@ namespace TodoApi.Controllers
 
 
 
-		// UPDATE  işlemi yapılıyor
+		
 		[HttpPut("{id}")]
+		// Güncelleme  işlemi yapılıyor
 		public IActionResult Put(int id, [FromBody] Items item)
 		{
 			var currentItem = items.Where(x => x.Tckn == id).FirstOrDefault();
@@ -79,8 +82,9 @@ namespace TodoApi.Controllers
 			}
 		}
 
-		//Delete işlemi yapılıyor.
+		
 		[HttpDelete("{id}")]
+		//Delete işlemi yapılıyor.
 		public ActionResult<Items> Delete(int id)
 		{
 			var item = items.FirstOrDefault(x => x.Tckn == id);
@@ -103,5 +107,13 @@ namespace TodoApi.Controllers
 	}
 
 }
+
+
+
+
+
+
+
+
 
 

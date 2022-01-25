@@ -10,9 +10,9 @@ namespace TodoApi.Models
 	public class Items
 	{
 		private int tckn;
-		private string isim;
-		private string soyisim;
-		private int yas;
+		private string name;
+		private string surname;
+		private int age ;
 
 		public int Tckn
 		{
@@ -21,26 +21,26 @@ namespace TodoApi.Models
 		}
 		public string Name
 		{
-			get { return this.Name; }
-			set { this.Name = value; }
+			get { return this.name; }
+			set { this.name = value; }
 		}
 		public string Surname
 		{
-			get { return this.Surname; }
-			set { this.Surname = value; }
+			get { return this.surname; }
+			set { this.surname = value; }
 		}
 
 		public int Age
 		{
-			get { return this.Age; }
-			set { this.Age = value; }
+			get { return this.age; }
+			set { this.age = value; }
 		}
 		public Items()
 		{
 			this.Tckn = tckn;
-			this.Name = Name;
-			this.Surname = Surname;
-			this.Age = Age;
+			this.Name = name;
+			this.Surname = surname;
+			this.Age = age;
 		}
 	}
 
